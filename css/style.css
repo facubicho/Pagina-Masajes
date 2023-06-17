@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Hind+Madurai:wght@300;400&family=Hind+Siliguri&family=Inter&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+    header
+    {
+        display: flex;
+        align-items: center; 
+        flex-direction: row-reverse;
+        background-color: black; 
+        /*Opacity start*/
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        filter: alpha(opacity=80);
+        -moz-opacity: 0.80;
+        -khtml-opacity: 0.8;
+        opacity: 0.8;
+        /*Opacity end*/
+        position: fixed;
+        width: 100%;
+    }
+
+    header
+    {
+        display: flex;
+        justify-content:space-between;
+    }
+
+    header img{border: solid 1px orangered;}
+
+    header ul
+    {
+        display: flex;
+        background-color: none;
+        font-size: 20px;   
+        font-weight:bold;
+    }
+
+    header ul a
+    {
+        color: orangered;
+        padding: 10px;
+        border: none;
+    }
+
+    #main_index
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        background-color:white;
+        padding-top: 70px;
+    }
+
+    #main_index div 
+    { 
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+
+    #main_about
+    {
+       
+        background-color:white;
+        color: orangered;
+        text-decoration: dashed;
+        padding-top: 90px;
+    }
+
+    #main_zona
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        padding-top: 70px;
+    }
+
+    #main_datos{padding-top: 70px;}
+
+    #main_masajes
+    {    
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        background-color:white;
+        padding-top: 80px;
+    }
+
+    footer
+    {
+        background-image: url(../img/mandala_footer.png);
+        background-position: left;
+        padding: 10px;
+        border: none;
+        margin: 10px 10px;
+        color:orange;
+        font-size: 20px;
+        border: solid 1px blueviolet;
+        color: black;
+        font-weight: bold;
+    }
+
+
+    footer ul
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        text-align: center;
+    }
+
+    footer ul li a
+    {
+        color:orangered;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+        iframe
+        {
+            padding: 2px;
+            border: ridge 1px blueviolet;
+            margin: 10px 10px 10px 10px;
+        }
+
+        p
+        {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content:space-around;
+        }
+
+        #div1 
+        {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            margin: 20px;
+            font-size: 12px;
+        }
+
+        #div2 
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            padding: 10px;
+            margin: 10px 10px 10px 10px;
+            font-size: 12px;
+        }
+
+        .div_principal
+        {   
+            display: flex;
+            flex-direction: row;
+        }
+
+        .id_masajes 
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin: 20px;
+            font-size: 12px;
+        }
+
+        .div_img
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        img{ border: solid 1px blueviolet;}
+
+        .titulo 
+        {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p
+        {  align-items: center;
+            padding: 5px;
+            margin: 5px;
+            font-size: 12px;
+        }
+
+        .no_borde{border: none;}
+
+        .separador
+        {
+            align-items: center;
+            padding: 5px;
+            margin: 5px;
+            background-image: url(../img/Separador.png);
+        }
+
+
+        @media (max-width: 768px)
+        {
+            #div1,
+            #div2 
+            {
+                flex-direction: column;
+            }
+            #div3
+            {
+                display: flex;
+                justify-content: center;
+            }
+
+        @media (max-width: 768px) 
+        { /*
+            .div_principal 
+            {
+              flex-direction: column;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+          
+            .div_principal .id_masajes,
+            .div_principal .div_img
+            {
+              width: 100%;
+            } */
+
+            .id_masajes 
+            {
+                grid-area: id_masajes;      
+            }
+              
+            .div_img 
+            {
+                grid-area: div_img;    
+            }
+
+            .div_principal
+            {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows:auto;
+                grid-template-areas:
+
+                  "id_masajes"
+                  "div_img";
+            }
+              
+          
+          }
+    }
