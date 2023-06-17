@@ -24,11 +24,6 @@
         /*Opacity end*/
         position: fixed;
         width: 100%;
-    }
-
-    header
-    {
-        display: flex;
         justify-content:space-between;
     }
 
@@ -213,9 +208,26 @@
             background-image: url(../img/Separador.png);
         }
 
+        @media (max-width: 592px)
+        {
+            header {
+                display: flex;
+                justify-content: center;   
+            }    
+
+            header img
+            {display: none;}
+        }
 
         @media (max-width: 768px)
         {
+
+            #main_index iframe 
+            {
+                width: auto;
+                height: auto;
+            }
+         
             #div1,
             #div2 
             {
@@ -227,8 +239,7 @@
                 justify-content: center;
             }
 
-        @media (max-width: 768px) 
-        { /*
+       /*
             .div_principal 
             {
               flex-direction: column;
@@ -244,16 +255,9 @@
               width: 100%;
             } */
 
-            .id_masajes 
-            {
-                grid-area: id_masajes;    
-            }
+            .id_masajes {grid-area: id_masajes;}
               
-            .div_img 
-            {
-                grid-area: div_img;    
-                
-            }
+            .div_img {grid-area: div_img;}
 
             .div_principal
             {
@@ -265,7 +269,6 @@
                   "id_masajes"
                   "div_img";
             }
-              
+        }  
           
-          }
-    }
+    
