@@ -246,12 +246,13 @@
 
             .id_masajes 
             {
-                grid-area: id_masajes;      
+                grid-area: id_masajes;    
             }
               
             .div_img 
             {
                 grid-area: div_img;    
+                
             }
 
             .div_principal
