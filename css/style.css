@@ -192,7 +192,7 @@ p {
     align-items: center;
     padding: 5px;
     margin: 5px;
-    background-image: url(../img/Separador.png);
+    background-image: url(../img/separador_1.png);
 }
 
 @media (max-width: 592px) {
